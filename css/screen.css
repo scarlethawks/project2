@@ -17,5 +17,11 @@ input {
   display:block;
 }
 
+fieldset {
+  border: 2px #af3333 solid;
+  border-radius: 10px;
+  background: #576E78;
+  font: 1em Verdana, Geneva, sans-serif;
+}
 /* ===== STATE STYLES ===== */
 
