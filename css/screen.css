@@ -11,10 +11,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ===== LAYOUT STYLES ===== */
 
 fieldset{
-    position:absolute;
+    position:relative;
 }
 
 /* ===== MODULAR STYLES ===== */
+
 label,
 input {
   width:100%;
