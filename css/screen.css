@@ -10,6 +10,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== LAYOUT STYLES ===== */
 
+fieldset{
+    position:absolute;
+}
+
 /* ===== MODULAR STYLES ===== */
 label,
 input {
@@ -22,6 +26,7 @@ fieldset {
   border-radius: 10px;
   background: #576E78;
   font: 1em Verdana, Geneva, sans-serif;
+  width:50%;
 }
 /* ===== STATE STYLES ===== */
 
