@@ -11,6 +11,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ===== LAYOUT STYLES ===== */
 
 /* ===== MODULAR STYLES ===== */
+label,
+input {
+  width:100%;
+  display:block;
+}
 
 /* ===== STATE STYLES ===== */
 
