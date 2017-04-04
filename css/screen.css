@@ -28,5 +28,11 @@ fieldset {
   font: 1em Verdana, Geneva, sans-serif;
   width:50%;
 }
+
+li {
+  padding-bottom:1.2em;
+  width:85%;
+}
+
 /* ===== STATE STYLES ===== */
 
