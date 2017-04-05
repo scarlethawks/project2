@@ -39,7 +39,7 @@ input {
 fieldset {
   border: 2px #af3333 solid;
   border-radius: 10px;
-  background: #576E78;
+  /*background: #576E78;*/
   font: 1em Verdana, Geneva, sans-serif;
   width:50%;
 }
@@ -48,18 +48,26 @@ li {
   padding-right:1em;
   padding-left:1em;
   padding-bottom:1em;
-  width:85%;
+  width:75%;
 }
 
 li #submit{
   padding-bottom: 0em;
+  width:35%;
 }
 
 li:first-child{
   padding-top:1em;
 }
+
 #log{
   padding-left:.75em;
+  font-weight:bold;
+  background: #576E78;
+}
+#pass-reset a{
+  color:red;
+  text-decoration:none;
 }
 
 
