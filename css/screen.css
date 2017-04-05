@@ -58,6 +58,9 @@ li #submit{
 li:first-child{
   padding-top:1em;
 }
+#log{
+  padding-left:.75em;
+}
 
 
 /* ===== STATE STYLES ===== */
