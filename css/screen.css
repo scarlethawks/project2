@@ -24,6 +24,16 @@ fieldset{
     position:relative;
 }
 
+#nav-links li{
+  border-style: solid;
+  border-width: 0 0 1px;
+}
+
+li a{
+  display: block;
+  text-decoration:none;
+}
+
 /* ===== MODULAR STYLES ===== */
 
 #nav-links li {
