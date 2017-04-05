@@ -45,9 +45,20 @@ fieldset {
 }
 
 li {
-  padding-bottom:1.2em;
+  padding-right:1em;
+  padding-left:1em;
+  padding-bottom:1em;
   width:85%;
 }
+
+li #submit{
+  padding-bottom: 0em;
+}
+
+li:first-child{
+  padding-top:1em;
+}
+
 
 /* ===== STATE STYLES ===== */
 
