@@ -45,7 +45,13 @@ function makeSchedule() {
       console.log("You selected Summer");
     }                                  
 }//end of schedule function
+function printSchedule(){
+  var html = '<table class ="table">';
+  html += '<tr><th>Course</th><th>Building</th><th>Room</th><th>Day</th><th>Time</th><th>Professor</th></tr>';
+  for (var i = 0; i < schedule.length; i++){
 
+  }//end of for statement
+}//end of print schedule
 document.querySelector("select").addEventListener('change',makeSchedule, false);
 //document.getElementById("submit").addEventListener('click',logIn, false);
 
