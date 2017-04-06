@@ -2,8 +2,9 @@ var help = document.querySelector("#pass-reset");
 var fields = document.querySelectorAll("input");
 var reset = document.getElementById("#pass-reset");
 var schedule = [{"course": "ITMD 362"}, 
-                {"buiding":"Stuart"}, 
-                {"days": "Mondays"},
+                {"buiding":"Stuart"},
+                {"room":"301"}, 
+                {"days": "Monday"},
                 {"time": "3:15-4:30"},
                 {"professor": "K. Stolley"}];
 
@@ -34,16 +35,17 @@ function logIn(){
 
 function makeSchedule() {
   var select = document.querySelector("select");
-  var output = document.querySelector("#output");
 
     if (select.value == "fall"){
       console.log("You selected Fall");
+      printSchedule();
     }else if (select.value == "spring"){
       console.log("You selected Spring");
     }else if (select.value == "summer"){
       console.log("You selected Summer");
     }                                  
 }//end of schedule function
+
 document.querySelector("select").addEventListener('change',makeSchedule, false);
 //document.getElementById("submit").addEventListener('click',logIn, false);
 
