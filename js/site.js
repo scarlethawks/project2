@@ -23,12 +23,12 @@ for (var i=0; i < fields.length; i++) {
 function logIn(){
   var user = document.getElementById('email').value.trim();
   var password = document.getElementById('password').value.trim();
+  var text2 = "fields cannot be empty";
 
   if (user !== '' || password !== ''){
     console.log("welcome to IIT " + user);
   }else{
-    alert("fields cannot be empty");
-    help.textContent = "fields cannot be empty";
+    help.text2Content = text2;
   }
 }//end of logIn function
 document.getElementById('submit').addEventListener('click',logIn,false);
