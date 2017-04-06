@@ -2,7 +2,7 @@ var help = document.querySelector("#pass-reset");
 var fields = document.querySelectorAll("input");
 var reset = document.getElementById("#pass-reset");
 var schedule = [{"course": "ITMD 362"}, 
-                {"buiding":"Stuart"},
+                {"building":"Stuart"},
                 {"room":"301"}, 
                 {"days": "Monday"},
                 {"time": "3:15-4:30"},
@@ -48,9 +48,18 @@ function makeSchedule() {
 function printSchedule(){
   var html = '<table class ="table">';
   html += '<tr><th>Course</th><th>Building</th><th>Room</th><th>Day</th><th>Time</th><th>Professor</th></tr>';
-  for (var i = 0; i < schedule.length; i++){
-
+  for (var i = 0; i < 1; i++){
+    html += '<tr>';
+    html += '<td>' + schedule[i].course + '</td>';
+    html += '<td>' + schedule[1].building + '</td>';
+    html += '<td>' + schedule[2].room + '</td>';
+    html += '<td>' + schedule[3].days + '</td>';
+    html += '<td>' + schedule[4].time + '</td>';
+    html += '<td>' + schedule[5].professor + '</td>';
+    html +='</tr>';
   }//end of for statement
+  html += '</table>';
+  document.querySelector('#results').innerHTML = html;
 }//end of print schedule
 document.querySelector("select").addEventListener('change',makeSchedule, false);
 //document.getElementById("submit").addEventListener('click',logIn, false);
