@@ -31,4 +31,19 @@ function logIn(){
     help.text2Content = text2;
   }
 }//end of logIn function
-document.getElementById('submit').addEventListener('click',logIn,false);
+
+function makeSchedule() {
+  var select = document.querySelector("select");
+  var output = document.querySelector("#output");
+
+    if (select.value == "fall"){
+      console.log("You selected Fall");
+    }else if (select.value == "spring"){
+      console.log("You selected Spring");
+    }else if (select.value == "summer"){
+      console.log("You selected Summer");
+    }                                  
+}//end of schedule function
+document.querySelector("select").addEventListener('change',makeSchedule, false);
+//document.getElementById("submit").addEventListener('click',logIn, false);
+
