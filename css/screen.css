@@ -23,22 +23,33 @@ html {
 fieldset{
     position:relative;
 }
-
+#nav-links{
+  position: relative;
+  top: 0;
+  padding: 0;
+  line-height: 1;
+}
 #nav-links li{
-  border-style: solid;
+  /*border-style: solid;*/
   border-width: 0 0 1px;
+  display: block;
 }
 
 li a{
-  display: block;
-  text-decoration:none;
-}
-
-/* ===== MODULAR STYLES ===== */
-
-#nav-links li {
   display: inline-block;
+  text-decoration:none; 
 }
+
+footer{
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+  font-size:.82em;
+  position:absolute;
+  color:red;
+  bottom:0;
+  width:90%;
+  height:60px;
+}
+/* ===== MODULAR STYLES ===== */
 
 label,
 input {
@@ -49,7 +60,6 @@ input {
 fieldset {
   border: 2px #af3333 solid;
   border-radius: 10px;
-  /*background: #576E78;*/
   font: 1em Verdana, Geneva, sans-serif;
   width:50%;
 }
@@ -71,9 +81,9 @@ li:first-child{
 }
 
 #log{
-  padding-left:.75em;
   font-weight:bold;
   background: #576E78;
+  padding:.45em 0em .45em .75em;
 }
 #pass-reset a{
   color:red;
