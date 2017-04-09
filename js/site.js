@@ -32,7 +32,7 @@ function logIn(){
   var password = document.getElementById('password').value.trim();
   var text2 = "fields cannot be empty";
 
-  if (user !== '' || password !== ''){
+  if (user == "froman2@hawk.iit.edu"){
     console.log("welcome to IIT " + user);
   }else{
     help.text2Content = text2;
@@ -68,5 +68,5 @@ function printSchedule(){
   document.querySelector('#results').innerHTML = html;
 }//end of print schedule
 document.querySelector("select").addEventListener('change',makeSchedule, false);
-//document.getElementById("submit").addEventListener('click',logIn, false);
+document.getElementById("submit").addEventListener('click',logIn, false);
 
