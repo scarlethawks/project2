@@ -1,6 +1,8 @@
 var help = document.querySelector("#pass-reset");
 var fields = document.querySelectorAll("input");
 var reset = document.getElementById("#pass-reset");
+var user = document.getElementById("#email");
+var password = document.getElementById('password');
 var schedule = [{"course": "ITMD-362", 
                  "building": "Stuart",
                  "room": "301",
@@ -12,7 +14,8 @@ var schedule = [{"course": "ITMD-362",
                  "room": "201",
                  "days": "MW",
                  "time": "3:15-4:30",
-                 "professor": "J. Hajek"}]; 
+                 "professor": "J. Hajek"}];
+ 
 
 for (var i=0; i < fields.length; i++) {
   fields[i].addEventListener("focus", function(event){
@@ -28,8 +31,7 @@ for (var i=0; i < fields.length; i++) {
 }//end of for statement
 
 function logIn(){
-  var user = document.getElementById('email').value.trim();
-  var password = document.getElementById('password').value.trim();
+
   var text2 = "fields cannot be empty";
 
   if (user === "froman2@hawk.iit.edu"){
@@ -67,6 +69,6 @@ function printSchedule(){
   html += '</table>';
   document.querySelector('#results').innerHTML = html;
 }//end of print schedule
-document.querySelector("select").addEventListener('change',makeSchedule, false);
-//document.getElementById("submit").addEventListener('click',logIn, false);
+document.querySelector("selct1").addEventListener('change',makeSchedule, false);
+document.getElementById("submit").addEventListener('click',logIn, false);
 
