@@ -108,11 +108,8 @@ li:first-child{
   min-width: 100%;
   margin: 0;
   padding: 0;
-
   list-style-type: none;
-
   text-align: center;
-
   background-color: #eee;
   color: #222;
 }
@@ -125,12 +122,10 @@ li:first-child{
 
 .navbar .nav a {
   display: block;
-
   padding: 0.5em;
-
-  transition: .3s background-color;
+  transition: .3s;
+  background-color: ;
   text-decoration: none;
-
   color: #222;
 }
 
