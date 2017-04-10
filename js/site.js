@@ -69,6 +69,6 @@ function printSchedule(){
   html += '</table>';
   document.querySelector('#results').innerHTML = html;
 }//end of print schedule
-document.querySelector("selct1").addEventListener('change',makeSchedule, false);
+document.querySelector("#selct1").addEventListener('change',makeSchedule, false);
 document.getElementById("submit").addEventListener('click',logIn, false);
 
