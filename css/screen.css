@@ -104,4 +104,46 @@ li:first-child{
 
 
 /* ===== STATE STYLES ===== */
+.navbar {
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
 
+  list-style-type: none;
+
+  text-align: center;
+
+  background-color: #eee;
+  color: #222;
+}
+
+.navbar .nav {
+  font-weight: bold;
+
+  flex: 1;
+}
+
+.navbar .nav a {
+  display: block;
+
+  padding: 0.5em;
+
+  transition: .3s background-color;
+  text-decoration: none;
+
+  color: #222;
+}
+
+
+.nav-logo {
+  margin: 0 1em;
+  height: 2em;
+  width: 1.5em;
+
+
+}
+
+@media screen and (min-width: 72em) {
+  .navbar {
+    display: flex;
+  }
