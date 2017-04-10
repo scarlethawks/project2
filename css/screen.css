@@ -104,8 +104,6 @@ li:first-child{
   text-decoration:none;
 }
 
-
-/* ===== STATE STYLES ===== */
 .navbar {
   min-width: 100%;
   margin: 0;
@@ -130,14 +128,14 @@ li:first-child{
   color: #222;
 }
 
-
 .nav-logo {
   margin: 0 1em;
   height: 2em;
   width: 1.5em;
-
-
 }
+
+/* ===== STATE STYLES ===== */
+
 
 @media screen and (min-width: 72em) {
   .navbar {
