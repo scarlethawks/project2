@@ -1,0 +1,107 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* ===== BASE STYLES ===== */
+
+html {
+  font-size: 1.25em; /*20px 1 em 1.25@16 */
+  line-height: 1.2em; /*24/20= 1.2 em */
+  font-family: tahoma, arial, helvetica, sans-serif;
+  padding: 1.2em 0.925em; /* 1.2em is 1 gridline and 18.5/20 = 0.925em*/
+}
+ header {
+  color:red;
+  text-align: center;
+}
+/* ===== LAYOUT STYLES ===== */
+
+fieldset{
+    position:relative;
+}
+#nav-links{
+  position: relative;
+  top: 0;
+  padding: 0;
+  line-height: 1;
+}
+#nav-links li{
+  /*border-style: solid;*/
+  border-width: 0 0 1px;
+  display: block;
+}
+
+li a{
+  display: inline-block;
+  text-decoration:none; 
+}
+
+footer{
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+  font-size:.82em;
+  position:absolute;
+  color:red;
+  padding-top:1em;
+  bottom:0;
+  width:90%;
+}
+#foot1{
+  position:relative;
+}
+/* ===== MODULAR STYLES ===== */
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+
+wrapper{
+  padding-bottom:2em;
+}
+
+label,
+input {
+  width:100%;
+  display:block;
+}
+
+fieldset {
+  border: 2px #af3333 solid;
+  border-radius: 10px;
+  font: 1em Verdana, Geneva, sans-serif;
+  width:50%;
+}
+
+li {
+  padding-right:1em;
+  padding-left:1em;
+  padding-bottom:1em;
+  width:75%;
+}
+
+li #submit{
+  padding-bottom: 0em;
+  width:35%;
+}
+
+li:first-child{
+  padding-top:1em;
+}
+
+#log{
+  font-weight:bold;
+  background: #576E78;
+  padding:.45em 0em .45em .75em;
+}
+#pass-reset a{
+  color:red;
+  text-decoration:none;
+}
+
+
+/* ===== STATE STYLES ===== */
+
