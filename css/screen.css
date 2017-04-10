@@ -18,7 +18,7 @@ html {
   color:red;
   text-align: center;
 }
-/* ===== LAYOUT STYLES ===== */
+/* ===== LAYOUT STYLES ===== */js
 
 fieldset{
     position:relative;
@@ -26,7 +26,7 @@ fieldset{
 #nav-links{
   position: relative;
   top: 0;
-  padding: 0;
+  padding: 0;js
   line-height: 1;
 }
 #nav-links li{
@@ -53,7 +53,9 @@ footer{
   position:relative;
 }
 /* ===== MODULAR STYLES ===== */
-
+header img {
+  width:100%;
+}
 td, th {
   border: 1px solid #999;
   padding: 0.5rem;
@@ -116,7 +118,6 @@ li:first-child{
 
 .navbar .nav {
   font-weight: bold;
-
   flex: 1;
 }
 
