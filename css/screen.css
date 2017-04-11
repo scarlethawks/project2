@@ -64,6 +64,10 @@ td, th {
   padding: 0.5rem;
 }
 
+th {
+  background-color:#eee;
+}
+
 wrapper{
   padding-bottom:2em;
 }
