@@ -163,6 +163,10 @@ li:first-child{
   table, thead, tbody, th, td, tr { 
 		display: block; 
 	}
+
+  th{
+    display:none;
+  }
   
   thead tr { 
 		position: absolute;
