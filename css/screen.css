@@ -18,6 +18,12 @@ html {
   color:red;
   text-align: center;
 }
+
+footer{
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+  font-size:.82em;
+  color:red;
+}
 /* ===== LAYOUT STYLES ===== */js
 
 fieldset{
@@ -41,10 +47,7 @@ li a{
 }
 
 footer{
-  font-family: Tahoma,Verdana,Segoe,sans-serif;
-  font-size:.82em;
   position:absolute;
-  color:red;
   padding-top:1em;
   bottom:0;
   width:90%;
@@ -107,7 +110,7 @@ li:first-child{
 .navbar {
   min-width: 100%;
   margin: 0;
-  padding: 0;
+  /*padding: 0;*/
   list-style-type: none;
   text-align: center;
   background-color: #eee;
@@ -126,6 +129,10 @@ li:first-child{
   background-color: ;
   text-decoration: none;
   color: #222;
+}
+
+.navbar .nav li:first-child{
+  padding-top:0em;
 }
 
 .nav-logo {
