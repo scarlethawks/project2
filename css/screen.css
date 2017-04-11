@@ -59,6 +59,10 @@ footer{
 header img {
   width:100%;
 }
+
+header{
+  padding-bottom:1em;
+}
 td, th {
   border: 1px solid #999;
   padding: 0.5rem;
@@ -152,3 +156,47 @@ li:first-child{
   .navbar {
     display: flex;
   }
+}
+
+@media screen and (min-width: 30em){
+  
+  table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+  
+  thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+  tr { border: 1px solid #ccc; }
+
+  	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+  	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+
+  	/*Label the data*/
+	td:nth-of-type(1):before { content: "Course"; background-color:#eee;}
+	td:nth-of-type(2):before { content: "Building"; background-color:#eee;}
+	td:nth-of-type(3):before { content: "Room"; background-color:#eee;}
+	td:nth-of-type(4):before { content: "Days"; background-color:#eee;}
+	td:nth-of-type(5):before { content: "Time"; background-color:#eee;}
+	td:nth-of-type(6):before { content: "Professor"; background-color:#eee;}
+
+}
