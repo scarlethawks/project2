@@ -18,7 +18,13 @@ html {
   color:red;
   text-align: center;
 }
-/* ===== LAYOUT STYLES ===== */
+
+footer{
+  font-family: Tahoma,Verdana,Segoe,sans-serif;
+  font-size:.82em;
+  color:red;
+}
+/* ===== LAYOUT STYLES ===== */js
 
 fieldset{
     position:relative;
@@ -26,7 +32,7 @@ fieldset{
 #nav-links{
   position: relative;
   top: 0;
-  padding: 0;
+  padding: 0;js
   line-height: 1;
 }
 #nav-links li{
@@ -41,10 +47,7 @@ li a{
 }
 
 footer{
-  font-family: Tahoma,Verdana,Segoe,sans-serif;
-  font-size:.82em;
   position:absolute;
-  color:red;
   padding-top:1em;
   bottom:0;
   width:90%;
@@ -53,10 +56,20 @@ footer{
   position:relative;
 }
 /* ===== MODULAR STYLES ===== */
+header img {
+  width:100%;
+}
 
+header{
+  padding-bottom:1em;
+}
 td, th {
   border: 1px solid #999;
   padding: 0.5rem;
+}
+
+th {
+  background-color:#eee;
 }
 
 wrapper{
@@ -102,48 +115,56 @@ li:first-child{
   text-decoration:none;
 }
 
-
-/* ===== STATE STYLES ===== */
 .navbar {
   min-width: 100%;
   margin: 0;
-  padding: 0;
-
+  /*padding: 0;*/
   list-style-type: none;
-
   text-align: center;
-
   background-color: #eee;
   color: #222;
 }
 
 .navbar .nav {
   font-weight: bold;
-
   flex: 1;
 }
 
 .navbar .nav a {
   display: block;
-
   padding: 0.5em;
-
-  transition: .3s background-color;
+  transition: .3s;
+  background-color: ;
   text-decoration: none;
-
   color: #222;
 }
 
+.navbar .nav li:first-child{
+  padding-top:0em;
+}
 
 .nav-logo {
   margin: 0 1em;
   height: 2em;
   width: 1.5em;
-
-
 }
+
+/* ===== STATE STYLES ===== */
+
 
 @media screen and (min-width: 72em) {
   .navbar {
     display: flex;
   }
+}
+
+@media screen and (min-width: 250px){
+  
+  .navbar{
+    text-align:left;
+  }  
+  .navbar .nav a {
+    padding:.005em;
+  }
+}
+

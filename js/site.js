@@ -1,18 +1,13 @@
 var help = document.querySelector("#pass-reset");
 var fields = document.querySelectorAll("input");
 var reset = document.getElementById("#pass-reset");
-var schedule = [{"course": "ITMD-362", 
-                 "building": "Stuart",
-                 "room": "301",
-                 "days": "M",
-                 "time": "3:15-4:30",
-                 "professor": "K. Stolley"},
-                 {"course": "ITMD-430", 
-                 "building": "IIT South Tower",
-                 "room": "201",
-                 "days": "MW",
-                 "time": "3:15-4:30",
-                 "professor": "J. Hajek"}]; 
+var user = document.getElementById("#email");
+var password = document.getElementById('password');
+var schedule = [{"course": "ITMD-362", "building": "Stuart","room": "111","days": "MW","time": "3:15-4:30","professor": "K. Stolley"},
+                {"course": "ITMT-430", "building": "Tech south","room": "2030","days": "MW","time": "10:00-11:40","professor": "J.Hajek"},
+                {"course": "ITMD-465", "building": "Perlstein","room": "131","days": "T","time": "6:25-9:05","professor": "B.Bailey"},
+                {"course": "ITMO-433", "building": "Stuart","room": "239","days": "W","time": "5:00-7:40","professor": "S.Shamsuddin"}];
+ 
 
 for (var i=0; i < fields.length; i++) {
   fields[i].addEventListener("focus", function(event){
@@ -28,8 +23,7 @@ for (var i=0; i < fields.length; i++) {
 }//end of for statement
 
 function logIn(){
-  var user = document.getElementById('email').value.trim();
-  var password = document.getElementById('password').value.trim();
+
   var text2 = "fields cannot be empty";
 
   if (user === "froman2@hawk.iit.edu"){
@@ -42,8 +36,8 @@ function logIn(){
 function makeSchedule() {
   var select = document.querySelector("select");
 
-    if (select.value == "fall"){
-      console.log("You selected Fall");
+    if (select.value == "spring"){
+      console.log("You selected Spring");
       printSchedule();
     }else if (select.value == "spring"){
       console.log("You selected Spring");
@@ -67,6 +61,6 @@ function printSchedule(){
   html += '</table>';
   document.querySelector('#results').innerHTML = html;
 }//end of print schedule
-document.querySelector("select").addEventListener('change',makeSchedule, false);
-//document.getElementById("submit").addEventListener('click',logIn, false);
+document.querySelector("#selct1").addEventListener('change',makeSchedule, false);
+document.getElementById("submit").addEventListener('click',logIn, false);
 
