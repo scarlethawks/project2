@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded",function () {
+console.log('Dom loaded');
+
 var help = document.querySelector("#pass-reset");
 var fields = document.querySelectorAll("input");
 var reset = document.getElementById("#pass-reset");
@@ -63,4 +66,4 @@ function printSchedule(){
 }//end of print schedule
 document.querySelector("#selct1").addEventListener('change',makeSchedule, false);
 document.getElementById("submit").addEventListener('click',logIn, false);
-
+},false);
