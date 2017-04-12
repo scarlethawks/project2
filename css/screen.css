@@ -24,7 +24,8 @@ footer{
   font-size:.82em;
   color:red;
 }
-/* ===== LAYOUT STYLES ===== */js
+
+/* ===== LAYOUT STYLES ===== */
 
 fieldset{
     position:relative;
@@ -32,7 +33,7 @@ fieldset{
 #nav-links{
   position: relative;
   top: 0;
-  padding: 0;js
+  padding: 0;
   line-height: 1;
 }
 #nav-links li{
@@ -110,9 +111,15 @@ li:first-child{
   background: #576E78;
   padding:.45em 0em .45em .75em;
 }
-#pass-reset a{
+.helper{
   color:red;
   text-decoration:none;
+  font-style: italic;
+  font-size: .75em;
+}
+.helper a{
+  color:red;
+  font-style:normal;
 }
 
 .navbar {
@@ -134,7 +141,7 @@ li:first-child{
   display: block;
   padding: 0.5em;
   transition: .3s;
-  background-color: ;
+  /*background-color: ;*/
   text-decoration: none;
   color: #222;
 }
