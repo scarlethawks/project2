@@ -48,12 +48,13 @@ function makeSchedule() {
 function printSchedule(val){
   console.log(val);
   var temp = "";
-  var html = '<table class ="table">';
+  var html = '<h1>' + val + ' schedule</h1>';
+  html += '<table class ="table">';
   html += '<tr><th>Course</th><th>Building</th><th>Room</th><th>Day</th><th>Time</th><th>Professor</th></tr>';
   if (val === "spring"){
     temp = schedule;  
   } else if (val === "fall"){
-    temp = fall;
+    //temp = fall;
   }
   {
     for (var i = 0; i < temp.length; i++){
