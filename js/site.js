@@ -10,6 +10,10 @@ var schedule = [{"course": "ITMD-362", "building": "Stuart","room": "111","days"
                 {"course": "ITMT-430", "building": "Tech south","room": "2030","days": "MW","time": "10:00-11:40","professor": "J.Hajek"},
                 {"course": "ITMD-465", "building": "Perlstein","room": "131","days": "T","time": "6:25-9:05","professor": "B.Bailey"},
                 {"course": "ITMO-433", "building": "Stuart","room": "239","days": "W","time": "5:00-7:40","professor": "S.Shamsuddin"}];
+var fall = [{"course": "PSYC-303", "building": "Life Science","room": "213","days": "TR","time": "8:35-9:50","professor": "A.Haedt Matt"},
+            {"course": "ITMO-440", "building": "Perlstein","room": "131","days": "TR","time": "10:00-11:15","professor": "C.R.Davids"},
+            {"course": "ITMM-471", "building": "Stuart","room": "111","days": "TR","time": "11:25-12:40","professor": "D.J.Hood "},
+            {"course": "ITMD-421", "building": "Life Science","room": "240","days": "T","time": "6:25-9:05","professor": "L.Papademas"}];
 
 for (var i=0; i < fields.length; i++) {
   fields[i].addEventListener("focus", function(event){
