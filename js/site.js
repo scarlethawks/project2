@@ -38,28 +38,35 @@ function makeSchedule() {
 
     if (select.value == "spring"){
       console.log("You selected Spring");
-      printSchedule();
+      printSchedule(select.value);
     }else if (select.value == "spring"){
       console.log("You selected Spring");
     }else if (select.value == "summer"){
       console.log("You selected Summer");
     }                                  
 }//end of schedule function
-function printSchedule(){
+function printSchedule(val){
+  console.log(val);
+  var temp = "";
   var html = '<table class ="table">';
   html += '<tr><th>Course</th><th>Building</th><th>Room</th><th>Day</th><th>Time</th><th>Professor</th></tr>';
-  for (var i = 0; i < schedule.length; i++){
-    html += '<tr>';
-    html += '<td>' + schedule[i].course + '</td>';
-    html += '<td>' + schedule[i].building + '</td>';
-    html += '<td>' + schedule[i].room + '</td>';
-    html += '<td>' + schedule[i].days + '</td>';
-    html += '<td>' + schedule[i].time + '</td>';
-    html += '<td>' + schedule[i].professor + '</td>';
-    html +='</tr>';
+  if (val === "spring"){
+    temp = schedule;  
+  }
+  {
+    for (var i = 0; i < temp.length; i++){
+      html += '<tr>';
+      html += '<td>' + temp[i].course + '</td>';
+      html += '<td>' + temp[i].building + '</td>';
+      html += '<td>' + temp[i].room + '</td>';
+      html += '<td>' + temp[i].days + '</td>';
+      html += '<td>' + temp[i].time + '</td>';
+      html += '<td>' + temp[i].professor + '</td>';
+      html +='</tr>';
   }//end of for statement
   html += '</table>';
   document.querySelector('#results').innerHTML = html;
+  }//end of if statement
 }//end of print schedule
 document.querySelector("#selct1").addEventListener('change',makeSchedule, false);
 document.getElementById("submit").addEventListener('click',logIn, false);
