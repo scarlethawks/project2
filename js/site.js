@@ -6,7 +6,7 @@ var fields = document.querySelectorAll("input");
 var reset = document.getElementById("#pass-reset");
 var user = document.getElementById("#email");
 var password = document.getElementById('password');
-var schedule = [{"course": "ITMD-362", "building": "Stuart","room": "111","days": "MW","time": "3:15-4:30","professor": "K. Stolley"},
+var spring = [{"course": "ITMD-362", "building": "Stuart","room": "111","days": "MW","time": "3:15-4:30","professor": "K. Stolley"},
                 {"course": "ITMT-430", "building": "Tech south","room": "2030","days": "MW","time": "10:00-11:40","professor": "J.Hajek"},
                 {"course": "ITMD-465", "building": "Perlstein","room": "131","days": "T","time": "6:25-9:05","professor": "B.Bailey"},
                 {"course": "ITMO-433", "building": "Stuart","room": "239","days": "W","time": "5:00-7:40","professor": "S.Shamsuddin"}];
@@ -57,7 +57,7 @@ function printSchedule(val){
   html += '<table class ="table">';
   html += '<tr><th>Course</th><th>Building</th><th>Room</th><th>Day</th><th>Time</th><th>Professor</th></tr>';
   if (val === "spring"){
-    temp = schedule;  
+    temp = spring;  
   } else if (val === "fall"){
     temp = fall;
   }
