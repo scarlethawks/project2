@@ -10,7 +10,6 @@ var schedule = [{"course": "ITMD-362", "building": "Stuart","room": "111","days"
                 {"course": "ITMT-430", "building": "Tech south","room": "2030","days": "MW","time": "10:00-11:40","professor": "J.Hajek"},
                 {"course": "ITMD-465", "building": "Perlstein","room": "131","days": "T","time": "6:25-9:05","professor": "B.Bailey"},
                 {"course": "ITMO-433", "building": "Stuart","room": "239","days": "W","time": "5:00-7:40","professor": "S.Shamsuddin"}];
- 
 
 for (var i=0; i < fields.length; i++) {
   fields[i].addEventListener("focus", function(event){
@@ -39,8 +38,9 @@ function makeSchedule() {
     if (select.value == "spring"){
       console.log("You selected Spring");
       printSchedule(select.value);
-    }else if (select.value == "spring"){
-      console.log("You selected Spring");
+    }else if (select.value == "fall"){
+      console.log("You selected Fall");
+      printSchedule(select.value);
     }else if (select.value == "summer"){
       console.log("You selected Summer");
     }                                  
@@ -52,6 +52,8 @@ function printSchedule(val){
   html += '<tr><th>Course</th><th>Building</th><th>Room</th><th>Day</th><th>Time</th><th>Professor</th></tr>';
   if (val === "spring"){
     temp = schedule;  
+  } else if (val === "fall"){
+    temp = fall;
   }
   {
     for (var i = 0; i < temp.length; i++){
