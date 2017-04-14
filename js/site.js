@@ -14,6 +14,8 @@ var fall = [{"course": "PSYC-303", "building": "Life Science","room": "213","day
             {"course": "ITMO-440", "building": "Perlstein","room": "131","days": "TR","time": "10:00-11:15","professor": "C.R.Davids"},
             {"course": "ITMM-471", "building": "Stuart","room": "111","days": "TR","time": "11:25-12:40","professor": "D.J.Hood "},
             {"course": "ITMD-421", "building": "Life Science","room": "240","days": "T","time": "6:25-9:05","professor": "L.Papademas"}];
+var summer = [{"course": "ITMD-513", "building": "Stuart","room": "239","days": "TW","time": "10:0-1:10","professor": "K. Stolley"},
+              {"course": "ITMD-526", "building": "Stuart","room": "201","days": "MW","time": "6:25-9:05","professor": "W. F. Slater"}];
 
 for (var i=0; i < fields.length; i++) {
   fields[i].addEventListener("focus", function(event){
@@ -58,9 +60,10 @@ function printSchedule(val){
   html += '<tr><th>Course</th><th>Building</th><th>Room</th><th>Day</th><th>Time</th><th>Professor</th></tr>';
   if (val === "spring"){
     temp = spring;  
-  } else if (val === "fall"){
+  }else if (val === "fall"){
     temp = fall;
-  }
+  }else 
+    temp = summer
   {
     for (var i = 0; i < temp.length; i++){
       html += '<tr>';
