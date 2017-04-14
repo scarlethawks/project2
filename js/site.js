@@ -43,6 +43,7 @@ function makeSchedule() {
       printSchedule(select.value);
     }else if (select.value == "summer"){
       console.log("You selected Summer");
+      printSchedule(select.value);
     }                                  
 }//end of schedule function
 function printSchedule(val){
