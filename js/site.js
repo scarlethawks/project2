@@ -59,7 +59,7 @@ function printSchedule(val){
   if (val === "spring"){
     temp = schedule;  
   } else if (val === "fall"){
-    //temp = fall;
+    temp = fall;
   }
   {
     for (var i = 0; i < temp.length; i++){
