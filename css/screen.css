@@ -155,7 +155,9 @@ li #submit{
   height: 2em;
   width: 1.5em;
 }
-
+ul li a:hover {
+  background:#8d9096;
+}
 /* ===== STATE STYLES ===== */
 
 
