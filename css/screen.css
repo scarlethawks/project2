@@ -102,7 +102,7 @@ li #submit{
   width:35%;
 }
 
-li:first-child{
+.log li:first-child{
   padding-top:1em;
 }
 
@@ -174,4 +174,3 @@ li:first-child{
     padding:.005em;
   }
 }
-
