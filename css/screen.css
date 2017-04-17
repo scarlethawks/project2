@@ -102,7 +102,7 @@ li #submit{
   width:35%;
 }
 
-li:first-child{
+.log li:first-child{
   padding-top:1em;
 }
 
@@ -155,7 +155,9 @@ li:first-child{
   height: 2em;
   width: 1.5em;
 }
-
+ul li a:hover {
+  background:#8d9096;
+}
 /* ===== STATE STYLES ===== */
 
 
@@ -174,4 +176,3 @@ li:first-child{
     padding:.005em;
   }
 }
-
