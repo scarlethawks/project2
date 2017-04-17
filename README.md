@@ -7,3 +7,5 @@ Paul: My strengths are UI/UX design, and writting decent HTML. Also can help a b
 
 
 John Moore: My strengths are in writing semantic HTML, I like organizing everything to make the HTML code tidy. I think I'm just okay at CSS and want to work more on my JavaScript.
+
+Cesar Escoto: My strengths are in git, some JS and HTML. I mainly just try my best to resolve any issues (A.K.A. I'm the rubber ducky in the debugging process)
