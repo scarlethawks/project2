@@ -5,3 +5,5 @@ Francisco Roman: Some of my strengths have been on an understanding on Javascrip
 
 Paul: My strengths are UI/UX design, and writting decent HTML. Also can help a bit in JavaScript. Looking forward to working with you all. Mainly CSS and HTML are my strengths.
 
+
+John Moore: My strengths are in writing semantic HTML, I like organizing everything to make the HTML code tidy. I think I'm just okay at CSS and want to work more on my JavaScript.
