@@ -25,6 +25,8 @@ footer{
   color:red;
 }
 
+
+
 /* ===== LAYOUT STYLES ===== */
 
 fieldset{
@@ -111,6 +113,9 @@ li #submit{
   background: #576E78;
   padding:.45em 0em .45em .75em;
 }
+#selct1{
+	font-size: 1.5em;
+}
 .helper{
   color:red;
   text-decoration:none;
@@ -171,6 +176,7 @@ ul li a:hover {
   
   .navbar{
     text-align:left;
+
   }  
   .navbar .nav a {
     padding:.005em;
