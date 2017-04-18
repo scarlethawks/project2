@@ -9,27 +9,34 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ===== BASE STYLES ===== */
 
 html {
-  font-size: 1.35em; /*20px 1 em 1.35@16 */
+  font-size: 1em;
   line-height: 1.2em; /*24/20= 1.2 em */
   font-family: tahoma, arial, helvetica, sans-serif;
   padding: 1.2em 0.925em; /* 1.2em is 1 gridline and 18.5/20 = 0.925em*/
 }
- header {
-  color:red;
+
+header {
+  background-color: #FFFFFF;
   text-align: center;
 }
 
 footer{
-  font-family: Tahoma,Verdana,Segoe,sans-serif;
-  font-size:.82em;
+  font-family: Tahoma,Verdana,"Segoe",sans-serif;
+  font-size: 0.82em;
   color:red;
+}
+
+h3{
+  font-size: 0.667em;
+  text-align: center;
 }
 
 /* ===== LAYOUT STYLES ===== */
 
-fieldset{
-    position:relative;
+#results{
+  padding-top: 10.8em; /* 9 gridlines */
 }
+
 #nav-links{
   position: relative;
   top: 0;
@@ -44,26 +51,39 @@ fieldset{
 
 li a{
   display: inline-block;
-  text-decoration:none; 
+  text-decoration:none;
 }
 
 footer{
-  position:absolute;
-  padding-top:1em;
+  position:relative;
+  
   bottom:0;
   width:90%;
 }
 #foot1{
   position:relative;
 }
+
 /* ===== MODULAR STYLES ===== */
+
+nav{
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
 header img {
-  width:100%;
+  display: block;
+  max-width:100%;
+  background-color: #000000;
+  margin-bottom: 25px solid #afafaf;
 }
 
 header{
-  padding-bottom:1em;
+  padding-bottom:1.2em;
+  background-color: #000000;
 }
+
 td, th {
   border: 1px solid #999;
   padding: 0.5rem;
@@ -83,18 +103,28 @@ input {
   display:block;
 }
 
+input{
+  margin-bottom: 1.2em;
+}
+
+/* FIX PX SIZE */
 fieldset {
+  margin-top: 100px;
   border: 2px #af3333 solid;
   border-radius: 10px;
   font: 1em Verdana, Geneva, sans-serif;
-  width:50%;
 }
 
-li {
-  padding-right:1em;
-  padding-left:1em;
-  padding-bottom:1em;
-  width:75%;
+form{
+  padding-top: 35%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+input[type=submit] {
+  padding: 1.2em 1.2em;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
 li #submit{
@@ -112,6 +142,7 @@ li #submit{
   padding:.45em 0em .45em .75em;
 }
 .helper{
+  text-align: center;
   color:red;
   text-decoration:none;
   font-style: italic;
@@ -122,18 +153,16 @@ li #submit{
   font-style:normal;
 }
 
+
 .navbar {
   min-width: 100%;
-  margin: 0;
-  /*padding: 0;*/
   list-style-type: none;
-  text-align: center;
   background-color: #eee;
   color: #222;
 }
 
 .navbar .nav {
-  font-weight: bold;
+  font-weight: 200;
   flex: 1;
 }
 
@@ -141,13 +170,9 @@ li #submit{
   display: block;
   padding: 0.5em;
   transition: .3s;
-  /*background-color: ;*/
   text-decoration: none;
+  text-align: center;
   color: #222;
-}
-
-.navbar .nav li:first-child{
-  padding-top:0em;
 }
 
 .nav-logo {
@@ -155,24 +180,49 @@ li #submit{
   height: 2em;
   width: 1.5em;
 }
+
 ul li a:hover {
   background:#8d9096;
 }
+
+
 /* ===== STATE STYLES ===== */
 
 
-@media screen and (min-width: 72em) {
+@media screen and (min-width: 400px) {
   .navbar {
     display: flex;
   }
-}
-
-@media screen and (min-width: 250px){
-  
-  .navbar{
-    text-align:left;
-  }  
-  .navbar .nav a {
-    padding:.005em;
+  #results{
+    padding-top: 3.6em; /* 3 gridlines */
   }
+  form{
+    padding-top: 20%;
+  }
+  input[type=submit] {
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+
+}
+@media screen and (min-width: 1000px){
+  html{
+    font-size: 1.35em; /*20px 1 em 1.35@16 */
+  }
+  #results{
+    padding-top: 2.4em; /* 2 gridlines */
+  }
+  form{
+    padding-top: 10%;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  input[type=submit] {
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+  input[type=password] {
+    margin-bottom: 2.4em;
+  }
+
 }

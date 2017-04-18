@@ -10,24 +10,22 @@
 <body>
   <div id="content-wrapper">
 	<header>
-        <img src="../img/header_blk_red.gif" alt="headeer_blk_red.gif">
-      <nav>
-      <main class="navwrapper">
-          <ul id="nav" class="navbar">
-            <li class="nav active"><a href="../index.html">Home</a></li>
-            <li class="nav"><a href="https://blackboard.iit.edu/">Blackboard</a></li>
-            <li class="nav"><a href="https://iit.edu/news/iittoday/">IIT News</a></li>
-            <li class="nav"><a href="https://ots.iit.edu/">OTS support</a></li>
-            <li class="nav"><a href="../index.html">Logout</a></li>
-          </ul>
-        </main>
+      <img src="../img/header_blk_red.gif" alt="headeer_blk_red.gif">
+      <nav class="navwrapper">
+        <ul id="nav" class="navbar">
+          <li class="nav active"><a href="../index.html">Home</a></li>
+          <li class="nav"><a href="https://blackboard.iit.edu/">Blackboard</a></li>
+          <li class="nav"><a href="https://iit.edu/news/iittoday/">IIT News</a></li>
+          <li class="nav"><a href="https://ots.iit.edu/">OTS Support</a></li>
+          <li class="nav"><a href="../index.html">Logout</a></li>
+        </ul>
       </nav>
     </header>
     <div id="results">
     <h1>Please select your semester</h1>
     </div>
     <select name="selct1" id="selct1">
-      <option value="" selected></option>
+      <option value="---">---</option>
       <option value="fall">Fall 2017</option>
       <option value="spring">Spring 2017</option>
       <option value="summer">Summer 2017</option>
@@ -36,7 +34,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="../js/site.js"></script>
   <footer>
-    Illinois Institute of Technology 10 West 35th StreetChicago, IL 60616 312.567.3000
+    <div id="bottom">
+      <div id="footer">
+        <h3>
+          Illinois Institute of Technology 10 West 35th Street Chicago, IL 60616 312.567.3000
+        </h3>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

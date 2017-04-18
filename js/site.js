@@ -50,7 +50,7 @@ function makeSchedule() {
     }else if (select.value == "summer"){
       console.log("You selected Summer");
       printSchedule(select.value);
-    }                                  
+    }
 }//end of schedule function
 function printSchedule(val){
   console.log(val);
@@ -59,10 +59,10 @@ function printSchedule(val){
   html += '<table class ="table">';
   html += '<tr><th>Course</th><th>Building</th><th>Room</th><th>Day</th><th>Time</th><th>Professor</th></tr>';
   if (val === "spring"){
-    temp = spring;  
+    temp = spring;
   }else if (val === "fall"){
     temp = fall;
-  }else 
+  }else
     temp = summer
   {
     for (var i = 0; i < temp.length; i++){
